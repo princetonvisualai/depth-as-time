@@ -17,7 +17,7 @@ Princeton University
 </p>
 <p align="center"><em>FLUX.1-schnell, one forward pass: decoding each layer with the model's own output head, from the input noise to the final image.</em></p>
 
-## MeanFlow: denoise, then renoise
+### MeanFlow: denoise, then renoise
 
 Flow maps such as MeanFlow are trained to transport a sample from noise level t to an endpoint r. When we ask a MeanFlow model for a noisy intermediate endpoint (0 < r < t) instead of the clean image, its layers first reveal a cleaner image and then add noise back toward the requested endpoint, all within a single network evaluation. The depthwise computation depends on the transport task the model is asked to solve.
 
@@ -25,10 +25,10 @@ Flow maps such as MeanFlow are trained to transport a sample from noise level t 
   <img src="assets/depth_as_time_fig.png" width="100%">
 </p>
 
-## Code
+### Code
 Code and checkpoints coming soon!
 
-## Citation
+### Citation
 
 If you find this work useful, please cite:
 
